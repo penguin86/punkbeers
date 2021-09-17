@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright 2021 Daniele Verducci
+*
+* This file is part of PunkBeers.
+*
+* PunkBeers is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* PunkBeers is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with PunkBeers.  If not, see <http://www.gnu.org/licenses/>.
+*
+-->
+<resources>
+    <color name="accent_200">#FFD36B</color>
+    <color name="accent_500">#FFFFB300</color>
+    <color name="accent_700">#E19E00</color>
+    <color name="secondary_200">#FF6426</color>
+    <color name="secondary_700">#D54300</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#0fff</color>
+</resources>

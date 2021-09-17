@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright 2021 Daniele Verducci
+*
+* This file is part of PunkBeers.
+*
+* PunkBeers is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* PunkBeers is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with PunkBeers.  If not, see <http://www.gnu.org/licenses/>.
+*
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:id="@+id/list_filter_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter_dropdown_rounded_background"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/list_filter_since_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:text="@string/list_filter_brewed_after"
+            app:drawableLeftCompat="@drawable/ic_firstbrewed"
+            android:drawableTint="@color/white"/>
+
+        <Button
+            android:id="@+id/list_filter_to_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/list_filter_brewed_before"
+            app:drawableLeftCompat="@drawable/ic_firstbrewed"
+            android:drawableTint="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/list_filter_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_clear"
+            app:tint="@color/white"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/list_progress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="@string/list_empty"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="it.danieleverducci.punkbeers.BeersFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".ui.BeersFragment"
+        tools:listitem="@layout/fragment_beers_listitem" />
+
+</LinearLayout>

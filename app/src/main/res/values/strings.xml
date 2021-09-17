@@ -1,0 +1,39 @@
+<!--
+* Copyright 2021 Daniele Verducci
+*
+* This file is part of PunkBeers.
+*
+* PunkBeers is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* PunkBeers is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with PunkBeers.  If not, see <http://www.gnu.org/licenses/>.
+*
+-->
+<resources>
+    <string name="app_name">PunkBeers</string>
+
+    <!-- Beers list -->
+    <string name="network_error">Unable to retrieve beers from network</string>
+    <string name="list_filter_brewed_after">Brewed after</string>
+    <string name="list_filter_brewed_before">Brewed before</string>
+    <string name="list_empty">No beers found</string>
+
+    <!-- Beers detail -->
+
+    <!-- Generic placeholders -->
+    <string name="placeholder_beertitle">Beer name</string>
+    <string name="placeholder_tagline">Lorem ipsum dolor sit amet</string>
+    <string name="placeholder_firstbrewed">00/0000</string>
+    <string name="placeholder_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique consectetur felis vel pretium. Praesent tincidunt vestibulum lacus, molestie rhoncus lacus fermentum vel. Morbi vel pulvinar sapien, sed ultrices arcu. Vivamus gravida nulla vel ex varius, vel consequat dolor tincidunt. Fusce maximus quis mi eget tristique. Aenean sed facilisis libero. Aliquam volutpat posuere fringilla. Praesent in lorem at elit ornare congue et quis quam. Maecenas tempus et purus ac rhoncus. Donec in pulvinar ex. Aliquam ac vehicula dolor. Nam vitae tortor id nibh congue sollicitudin id in nisi. Proin lorem eros, congue at euismod et, malesuada porta nunc. Proin laoreet massa ac mi lacinia, eget tincidunt odio vestibulum. Vestibulum fermentum nunc nunc, eget ultrices nisi tempor non. Curabitur lorem leo, fringilla et pellentesque a, pharetra id magna. </string>
+
+    <!-- Menu -->
+    <string name="action_filter">Filter</string>
+</resources>
